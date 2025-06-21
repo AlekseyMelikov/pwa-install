@@ -331,8 +331,8 @@ export class PWAInstallElement extends LitElement {
 	}
 }
 
-if (!customElements.get('pwa-install')) {
-	customElements.define('pwa-install', PWAInstallElement);
+if (!window.customElements.get('pwa-install')) {
+	window.customElements.define('pwa-install', PWAInstallElement);
 }
 
 export { PWAInstallAttributes };
